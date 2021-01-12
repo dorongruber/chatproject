@@ -5,7 +5,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const path = require('path');
 require('dotenv').config()
-app.use(express.static(path.join(__dirname, 'dist/css1')));
+app.use(express.static(path.join(__dirname, 'dist/chatproject')));
 
 const {
   JoinUsersPhool,
@@ -51,7 +51,7 @@ app.use((req,res,next) => {
   });
 
   app.get('*', (req,res) => {
-    res.sendFile(path.join(__dirname, 'dist/css1/index.html'))
+    res.sendFile(path.join(__dirname, 'dist/chatproject/index.html'))
   })
 
 const port = process.env.PORT || 8080;
