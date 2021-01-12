@@ -5,7 +5,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const path = require('path');
 require('dotenv').config()
-app.use(express.static(path.join(__dirname, 'dist/chatproject')));
+
 
 const {
   JoinUsersPhool,
@@ -23,6 +23,7 @@ const app = express();
 const server = require('http').createServer(app)
 const io = require('socket.io')(server);
 
+app.use(express.static(path.join(__dirname, 'dist/chatproject')));
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/api/user', userRouter);
