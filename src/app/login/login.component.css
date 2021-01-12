@@ -1,0 +1,25 @@
+#form-footer {
+  position: absolute;
+}
+
+@media only screen and (min-width: 300px) {
+  #form-footer {
+    left: 27vw;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0 10vw;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #form-footer {
+    left: 31vw;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0 4.6vw;
+  }
+}

@@ -1,0 +1,58 @@
+#login-page {
+  position: absolute;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+#login-body {
+  position: absolute;
+  background:  rgba(155, 160, 162, .2);
+  border-radius: 20px;
+}
+
+::ng-deep .mat-form-field-infix {
+  width: 50vw !important;
+}
+
+::ng-deep .mat-form-field {
+  display: block !important;
+  font-weight: bold !important;
+}
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.4em;
+  background: rgba(218, 215, 205, .5);
+}
+
+.reg-btn {
+  width: stretch;
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px;
+}
+
+.reg-btn:hover  {
+  background: rgba(218, 215, 205, 1);
+}
+
+@media only screen and  (min-width: 300px) {
+  #login-body {
+    margin: 15vh 6vw 3vh 6vw;
+  }
+
+  #form-body {
+    margin: 2vh 10vw 8vh 10vw;
+  }
+}
+
+@media only screen and  (min-width: 500px) {
+  #login-body {
+    margin: 10vh 13vw 3vh 13vw;
+  }
+
+  #form-body {
+    margin: 5vh 10vw 8vh 10vw;
+  }
+}

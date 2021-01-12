@@ -1,0 +1,44 @@
+
+.icon {
+  font-size: 2em;
+  width: 1em;
+  height: 1em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+::ng-deep  .mat-snack-bar-handset {
+  position: relative;
+  right: 18vw ;
+  top: 5vh ;
+}
+
+.btn {
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+
+}
+
+@media only screen and (min-width: 300px) {
+  .footer {
+    left: 30vw;
+  }
+
+  .btn {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .footer {
+    left: 31vw;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0 4vw;
+  }
+}

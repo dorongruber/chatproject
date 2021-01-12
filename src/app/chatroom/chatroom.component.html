@@ -1,0 +1,50 @@
+<div  class='chat-wrap'>
+  <div class="chat-header-wrap">
+    <ul class="headers-container">
+
+
+
+      <button id="menu-span" mat-button [matMenuTriggerFor]="menu">
+        <mat-icon id="menu-icon">menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="ShowConnectedUsers()" >Add User To Chat</button>
+        <button mat-menu-item >connected List</button>
+        <button mat-menu-item (click)="ExitChat()" >To Menu</button>
+      </mat-menu>
+
+      <li class="title">{{chatname}}</li>
+
+    </ul>
+  </div>
+  <div id="ul-sidenav" class="group-names-container" style="display:none;">
+    <ul>
+      <li class=close-userlist-btn>
+        <mat-icon class="close-list-icon" (click)="CloseUserList()" >close</mat-icon>
+      </li>
+      <ng-container *ngFor="let user of connectedUserList">
+        <li>
+          <button class="user-btn" mat-raised-button (click)="AddUserToGroupChat(user.name, user.uid)" >{{user.name}}</button>
+        </li>
+      </ng-container>
+
+    </ul>
+  </div>
+  <div class="group-chat-content">
+    <ul >
+      <ng-container *ngFor="let message of chatMessages">
+        <li class="message-container">
+          <div class="message-title">{{message.username}} <span>{{message.time.h}}:{{message.time.mi}}</span></div>
+          <p class="message-content">{{message.message}}</p>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+  <div class="input-container">
+    <input class="input-message" [formControl]="message" type="text">
+    <button class="btn" mat-raised-button (click)="SendMessage(message)" >
+      <mat-icon>send</mat-icon>
+    </button>
+  </div>
+</div>
+

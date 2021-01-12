@@ -1,0 +1,75 @@
+.page-container {
+  position: relative;
+  width: 100vw;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.ride-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  margin: 1vh 1vw;
+  height: 2em;
+}
+
+.user-content {
+  margin: auto;
+}
+
+.btn {
+  margin: auto;
+}
+
+img {
+  width: 100vw;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container {
+  padding: 0;
+  overflow: auto;
+}
+
+@media only screen and (min-width: 300px) {
+
+  .list-container {
+    height: 72vh;
+  }
+
+  .sidenav-button {
+    left: 38%;
+  }
+
+  img {
+    height: 87vh;
+  }
+
+}
+
+@media only screen and (min-width: 500px) {
+
+  .list-container {
+    height: 81.7vh;
+  }
+
+  .sidenav-button {
+    left: 47%;
+  }
+
+  img {
+    height: 94.4vh;
+  }
+
+}

@@ -1,0 +1,17 @@
+<div id="login-page">
+  <div id="login-body">
+    <div id="form-body" >
+      <router-outlet></router-outlet>
+    </div>
+    <ng-container *ngIf='!viewstate'>
+      <div id="login-footer">
+        <button class="btn reg-btn " mat-raised-button (click)="RouteTo()">login</button>
+      </div>
+    </ng-container>
+    <ng-container *ngIf='viewstate'>
+      <div id="login-footer">
+        <button class="btn reg-btn " mat-raised-button (click)="RouteTo()">register</button>
+      </div>
+    </ng-container>
+  </div>
+</div>

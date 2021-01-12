@@ -1,0 +1,27 @@
+<div class="form-content">
+  <form [formGroup]="chat">
+
+    <mat-form-field class="mat-form" appearance="outline">
+      <mat-label>Address</mat-label>
+      <input id="driver-search" matInput type="text" formControlName="name" placeholder="Enter Chat Name">
+    </mat-form-field>
+
+    <div class="footer-container">
+      <button class="btn"  mat-raised-button (click)="CreateGroupChat(chat,$event)"> Create New Chat</button>
+    <button class="btn" mat-raised-button>close</button>
+    </div>
+  </form>
+</div>
+
+<!--
+  <mat-form-field class="mat-form" appearance="outline">
+      <mat-label>Phone Number</mat-label>
+      <input matInput formControlName="phone" type="text" placeholder="Enter Phone ">
+    </mat-form-field>
+
+    <mat-form-field class="mat-form" appearance="outline">
+      <mat-label>Number Of Seats In Car</mat-label>
+      <input matInput type="text" formControlName="numberofseats" placeholder="Enter Number Of Seats">
+    </mat-form-field>
+
+-->

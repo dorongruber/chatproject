@@ -1,0 +1,27 @@
+.form-content {
+  margin-bottom: 7vh;
+  margin-top: 4vh;
+}
+
+.mat-form {
+  width:  stretch;
+}
+
+.icon {
+  font-size: 2em;
+  width: 1em;
+  height: 1em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  position: relative;
+  font-size: 1.2em;
+
+}

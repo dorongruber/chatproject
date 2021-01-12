@@ -1,0 +1,44 @@
+<mat-sidenav-container>
+  <mat-sidenav class="nav-container" #sidenav mode="over" position="start" [(opened)]='opened' >
+
+    <app-userlist id="ul-page" (liststate)="CloseChat($event)" [CurrentUser]="currentUser"  [userlist]="connectedUsers"  ></app-userlist>
+    <app-chatroom id="cr-page" (chatstate)="CloseChat($event)"  [roomInfo]="openchat" [connectedUserList]="connectedUsers" ></app-chatroom>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class='chat-wrap'>
+      <div class="chat-header-wrap">
+        <ul class="headers-container">
+
+          <button id="menu-span" mat-button [matMenuTriggerFor]="menu">
+            <mat-icon id="menu-icon">menu</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button class="btn" mat-menu-item (click)="ShowList()" >users List</button>
+            <button class="btn" mat-menu-item >connected List</button>
+            <button class="btn" mat-menu-item (click)="LogOut()" >Logout</button>
+            <!-- [routerLink]="['/login']" -->
+          </mat-menu>
+
+            <li class="title">chats</li>
+
+        </ul>
+      </div>
+      <div class="group-chat-container">
+        <ul class="chat-content">
+           <ng-container *ngFor="let chat of chats">
+            <li class="chat-container" (click)="OpenChat(chat)">
+              <mat-icon class="chat-image" >groups</mat-icon>
+              <a class="chat-title">{{chat.roomname}} </a>
+            </li>
+           </ng-container>
+        </ul>
+      </div>
+      <div class="input-container">
+        <mat-icon class="icon" (click)="NewChat()">add_circle</mat-icon>
+      </div>
+    </div>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
