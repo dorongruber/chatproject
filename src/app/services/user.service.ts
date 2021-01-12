@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 
 // const URI = 'api/user/';
 
-const IPV4_URL = 'http://10.100.102.4:8080/api/user/';
+const IPV4_URL = 'api/user/';
 
 @Injectable({providedIn: 'root'})
 export class UserService {

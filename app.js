@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.use('/api/user', userRouter);
 app.use('/api/map', mapRouter);
 
-mongoose.connect( process.env.DEV_BD_CONNECTION,
+mongoose.connect( process.env.DEV_BD_CONNECTION || process.env.PRO_BD_CONNECTION,
   {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
   .then(() => {
     console.log('connected to db');
