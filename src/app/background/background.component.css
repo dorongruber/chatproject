@@ -9,6 +9,7 @@
   position: absolute;
   background:  rgba(300, 255, 255, .9);
   border-radius: 20px;
+  border: 2px solid;
 }
 
 ::ng-deep .mat-form-field-infix {
