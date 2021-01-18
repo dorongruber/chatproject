@@ -1,6 +1,18 @@
 .form-content {
-  margin-bottom: 7vh;
+  margin-bottom: 5vh;
   margin-top: 4vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+mat-label {
+  color: black;
+}
+
+::ng-deep div.mat-form-field-outline {
+  color: black !important ;
 }
 
 .mat-form {
@@ -23,5 +35,13 @@
 .btn {
   position: relative;
   font-size: 1.2em;
+  color: white;
+}
 
+.ok {
+  background: rgb(37, 211, 37);
+}
+
+.close {
+  background: rgb(218, 94, 94);
 }

@@ -1,14 +1,16 @@
 <div class="form-content">
+  <h2 class="header">Create New Chat</h2>
+  <hr><br>
   <form [formGroup]="chat">
 
     <mat-form-field class="mat-form" appearance="outline">
-      <mat-label>Address</mat-label>
-      <input id="driver-search" matInput type="text" formControlName="name" placeholder="Enter Chat Name">
+      <mat-label>Enter Chat Name</mat-label>
+      <input id="driver-search" matInput type="text" formControlName="name" placeholder="Chat Name">
     </mat-form-field>
 
     <div class="footer-container">
-      <button class="btn"  mat-raised-button (click)="CreateGroupChat(chat,$event)"> Create New Chat</button>
-    <button class="btn" mat-raised-button>close</button>
+      <button class="btn ok"  mat-raised-button (click)="CreateGroupChat(chat,$event)"> ok</button>
+    <button class="btn close" mat-raised-button>close</button>
     </div>
   </form>
 </div>

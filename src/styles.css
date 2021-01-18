@@ -2,7 +2,7 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-image:  url('./assets/images/27230.jpg');
-  background-size: 100% 110%;
-  background-repeat: no-repeat;
+  background-image:  url('./assets/images/pngegg (18).png');
+  background-size: 100% 50%;
+  background-position: center;
 }

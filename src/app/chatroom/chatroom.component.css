@@ -5,9 +5,9 @@ ul {
 
 .chat-wrap {
   display: grid;
-  background-image:  url('../../assets/images/27230.jpg');
-  background-size: 100% 110%;
-  background-repeat: no-repeat;
+  background-image:  url('../../assets/images/pngegg (18).png');
+  background-size: 100% 50%;
+  background-position: center;
 }
 
 .chat-header-wrap {
@@ -36,9 +36,10 @@ ul {
 }
 
 .message-container {
-  margin: 1vh 4vw;
+  margin: 2.7vh 4vw;
   padding: 1vh .5vw;
-  background: rgba(218, 215, 205, .5);
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 2px 6px 0px 5px;
 }
 
 .message-title {
@@ -84,7 +85,9 @@ ul {
 
 #menu-icon {
   padding-top: 3vh;
-  transform: scale(1.2);
+  transform: scale(1.5);
+  color: black;
+  background: beige;
 }
 
 #menu-span {
@@ -97,10 +100,16 @@ ul {
 .title {
   position: relative;
   font-family: fantasy ;
-  font-size: 2em;
+  font-size: 3.5em;
   margin: auto;
-  border-bottom: 1px solid white;
+  box-shadow: 0px 3px 0px 4px;
+  top: -4vh;
 }
+
+.icon {
+  font-size: 2.1em;
+}
+
 ::ng-deep .mat-menu-content {
   /* background: rgb(146, 188, 190); */
 }
@@ -110,15 +119,24 @@ ul {
 
   .chat-wrap {
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto 76.4vh auto;
+    grid-template-rows: auto 71.4vh auto;
   }
 
   .input-message {
     width: 81vw;
+    height: 4vh;
   }
 
+  .btn {
+    padding: 2.5vh 2.5vw;
+    display: flex;
+    align-items: center;
+
+  }
 
 }
+
+
 
 @media only screen and (min-width: 500px) and (min-height: 500px) {
 
@@ -132,11 +150,7 @@ ul {
     height: 5vh;
   }
 
-  .btn {
-    padding: 2.8vh 2.5vw;
-    display: flex;
-    align-items: center;
-  }
+
 }
 
 @media only screen and (min-width: 600px) {

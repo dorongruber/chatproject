@@ -2,6 +2,14 @@
   position: absolute;
 }
 
+mat-label {
+  color: black;
+}
+
+::ng-deep div.mat-form-field-outline {
+  color: black !important ;
+}
+
 @media only screen and (min-width: 300px) {
   #form-footer {
     left: 27vw;
