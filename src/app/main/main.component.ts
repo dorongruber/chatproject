@@ -145,7 +145,7 @@ export class MainComponent implements OnInit {
       document.getElementById('ul-page').style.display = 'none';
       // document.getElementById('cr-component').style.display = 'none';
       document.getElementById('cr-page').style.display = 'grid';
-      document.getElementById('cr-page').style.background = 'linear-gradient(45deg, wheat, #00737a)';
+      document.getElementById('cr-page').style.background = 'darkslategray';
 
     } else {
       document.getElementById('ul-page').style.display = 'block';

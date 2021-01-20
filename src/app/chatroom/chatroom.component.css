@@ -6,7 +6,7 @@ ul {
 .chat-wrap {
   display: grid;
   background-image:  url('../../assets/images/pngegg (18).png');
-  background-size: 100% 50%;
+  background-size: 30% 30%;
   background-position: center;
 }
 
@@ -33,27 +33,30 @@ ul {
   font-family: cursive ;
   flex-direction: column;
   margin: 0;
+  background: #00737a;
+  height: 5em;
 }
 
 .message-container {
-  margin: 2.7vh 4vw;
+  margin: .5em .7em;
   padding: 1vh .5vw;
   background: rgba(245, 222, 179, .9);
-  box-shadow: 2px 6px 0px 5px;
+  /* box-shadow: 0px 5px 4px 10px; */
+  border-radius: 20px;
+  width: fit-content;
 }
 
 .message-title {
   display: flex;
   justify-content: space-between;
-  padding: 0 2vw;
+  padding: 0 1em;
   margin: .6vh 0;
-  font-family: fantasy ;
 }
 
 .message-content {
-  padding-left: 4vw;
+  padding-left: 1em;
   font-family: sans-serif ;
-  margin: 1vh 0;
+  margin: .5em 2em .5em 0;
 }
 
 .input-container {
@@ -94,45 +97,61 @@ ul {
  margin-left: auto;
  /* padding-bottom: 3vh; */
   z-index: 5;
-  color: white;
+  color: wheat;
 }
 
 .title {
   position: relative;
-  font-family: fantasy ;
+  font-family: sans-serif ;
   font-size: 3.5em;
   margin: auto;
-  box-shadow: 0px 3px 0px 4px;
-  top: -4vh;
-  background: wheat;
+  top: -.7em;
+  margin-right: auto;
+  margin-left: .5em;
+  color: wheat;
 }
 
 .icon {
-  font-size: 2.1em;
+  transform: scale(1.5);
+  margin: auto;
 }
 
 ::ng-deep .mat-menu-content {
   /* background: rgb(146, 188, 190); */
 }
 
+.time-container {
+  padding-left: 3em;
+}
+
+.username {
+  margin: 0;
+}
 
 @media screen and (max-width: 500px) and (min-height: 500px) {
 
   .chat-wrap {
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto 71.4vh auto;
+    grid-template-rows: auto 75.5vh auto;
   }
 
   .input-message {
-    width: 81vw;
-    height: 4vh;
+    width: 77vw;
+    height: 4em;
+    border-radius: 20px;
   }
 
   .btn {
-    padding: 2.5vh 2.5vw;
     display: flex;
     align-items: center;
-
+    border: 2px solid;
+    width: 3em;
+    height: 3em;
+    position: relative;
+    top: 3%;
+    background: wheat;
+    /* box-shadow: 0px 5px 4px 4px; */
+    border-radius: 50%;
   }
 
 }

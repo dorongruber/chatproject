@@ -3,6 +3,9 @@
 
   width: 100vw;
   height: 100vh;
+  background-image:  url('../../assets/images/pngegg (18).png');
+  background-size: 30% 30%;
+  background-position: center;
 }
 
 #login-body {
@@ -40,7 +43,7 @@
 
 @media only screen and  (min-width: 300px) {
   #login-body {
-    margin: 15vh 6vw 3vh 6vw;
+    margin: 8vh 6vw 3vh 6vw;
   }
 
   .header {

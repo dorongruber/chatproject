@@ -5,6 +5,8 @@ import { MsgDate } from '../models/message.model';
 
 const SOCKET_ENDPOINT_DEV = 'https://polar-bastion-67911.herokuapp.com';
 
+
+
 @Injectable({providedIn: 'root'})
 export class SocketService {
   socket: any;

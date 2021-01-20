@@ -6,10 +6,8 @@ import { map } from 'rxjs/operators';
 import { DbUserFormat } from '../models/userDB.model';
 import { environment } from 'src/environments/environment';
 
-
-// const URI = 'api/user/';
-
 const IPV4_URL = 'api/user/';
+
 
 @Injectable({providedIn: 'root'})
 export class UserService {

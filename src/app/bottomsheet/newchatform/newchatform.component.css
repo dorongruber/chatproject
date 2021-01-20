@@ -45,3 +45,7 @@ mat-label {
 .close {
   background: rgb(218, 94, 94);
 }
+
+::ng-deep .mat-bottom-sheet-container {
+  background: wheat;
+}

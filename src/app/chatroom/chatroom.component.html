@@ -34,7 +34,7 @@
     <ul >
       <ng-container *ngFor="let message of chatMessages">
         <li class="message-container">
-          <div class="message-title">{{message.username}} <span>{{message.time.h}}:{{message.time.mi}}</span></div>
+          <div class="message-title"><h3 class="username">{{message.username}}</h3> <span class="time-container">{{message.time.h}}:{{message.time.mi}}</span></div>
           <p class="message-content">{{message.message}}</p>
         </li>
       </ng-container>
@@ -42,9 +42,9 @@
   </div>
   <div class="input-container">
     <input class="input-message" [formControl]="message" type="text">
-    <button class="btn" mat-raised-button (click)="SendMessage(message)" >
+    <div class="btn"  (click)="SendMessage(message)" >
       <mat-icon class="icon">send</mat-icon>
-    </button>
+    </div>
   </div>
 </div>
 
