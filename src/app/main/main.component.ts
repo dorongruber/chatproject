@@ -18,6 +18,7 @@ import { NewChatFormComponent } from '../bottomsheet/newchatform/newchatform.com
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+
   currentUser: {name: string, phone: string, email: string, id: string};
   userId$: Observable<string>;
   uId: string;
@@ -45,12 +46,17 @@ export class MainComponent implements OnInit {
       this.uId = res;
     });
     await this.GetUserFromDb().then(res => {
-      this.currentUser = {
-        name: res.username,
-        phone: res.phone,
-        email: res.email,
-        id: this.uId
-      };
+      if (res.username !== undefined) {
+        this.currentUser = {
+          name: res.username,
+          phone: res.phone,
+          email: res.email,
+          id: this.uId
+        };
+      } else {
+        this.router.navigate(['/login']);
+      }
+
     });
     console.log('current user -> ', this.currentUser);
     this.chatsservice.ConnectToSocket(this.currentUser.name, this.currentUser.id, 'AddtoPool');
@@ -108,11 +114,21 @@ export class MainComponent implements OnInit {
   async GetUserFromDb() {
     let tempuser: {username: string, phone: string, email: string};
     return (await this.userservice.GetUser(this.uId)).toPromise().then(res => {
+      console.log('GetUserFromDb res -> ', res);
       const temp = Object.values(res);
+      console.log('promise -> ', temp);
       tempuser = {
         username: temp[0],
         phone: temp[1],
         email: temp[2]
+      };
+      return tempuser;
+    }).catch(err => {
+      // console.log('show err -> ', err);
+      tempuser = {
+        username: undefined,
+        phone: undefined,
+        email: undefined
       };
       return tempuser;
     });

@@ -10,7 +10,7 @@ mat-label {
   color: black !important ;
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 260px) {
   #form-footer {
     left: 27vw;
   }
@@ -21,13 +21,38 @@ mat-label {
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 551px) {
+
+  .form-container {
+    transform: scale(1.2);
+    padding: 1em;
+  }
+
   #form-footer {
-    left: 31vw;
+    left: 22vw;
   }
 
   .btn {
     font-size: 1.2em;
+    padding: 0 4.6vw;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+
+  .form-container {
+    transform: scale(1);
+    padding: .2em 2em;
+    box-sizing: border-box;
+  }
+
+  #form-footer {
+    left: 8vw;
+    bottom: -2em;
+  }
+
+  .btn {
+    font-size: 1em;
     padding: 0 4.6vw;
   }
 }

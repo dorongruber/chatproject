@@ -41,7 +41,7 @@
     </ul>
   </div>
   <div class="input-container">
-    <input class="input-message" [formControl]="message" type="text">
+    <textarea class="input-message" [formControl]="message" type="text"></textarea>
     <div class="btn"  (click)="SendMessage(message)" >
       <mat-icon class="icon">send</mat-icon>
     </div>

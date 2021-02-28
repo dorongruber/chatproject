@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
 }
+
 mat-label {
   color: black;
 }
@@ -48,4 +49,29 @@ mat-label {
 
 ::ng-deep .mat-bottom-sheet-container {
   background: wheat;
+}
+
+@media only screen and (min-width: 501px) {
+  .btn {
+    position: relative;
+    font-size: 2.5em;
+    color: white;
+  }
+
+  .ok {
+    height: 5vh;
+    background: rgb(37, 211, 37);
+  }
+
+  .close {
+    height: 5vh;
+    background: rgb(218, 94, 94);
+  }
+}
+
+@media only screen and (min-width: 801px) {
+
+  .btn {
+    font-size: 1.5em;
+  }
 }

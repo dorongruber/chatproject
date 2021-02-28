@@ -9,6 +9,7 @@ ul {
 
 .chat-wrap {
   display: grid;
+  background-color: darkslategray;
 }
 
 .chat-header-wrap {
@@ -60,7 +61,7 @@ ul {
 
 .chat-title {
   padding-left: 15%;
-  padding-bottom: .3em;
+  padding-bottom: 1.3em;
   /* margin: .6vh 0vw .6vh 3vw; */
   margin: 0 .4em;
   color: wheat;
@@ -68,6 +69,7 @@ ul {
   width: 82%;
   height: 5vh;
   border-bottom: 2px solid wheat;
+  box-sizing: border-box;
 }
 
 .message-content {
@@ -133,7 +135,7 @@ ul {
 
   .chat-wrap {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 75.5vh auto;
+    grid-template-rows: auto 77vh auto;
   }
 
   .sidenav-button {
@@ -146,7 +148,7 @@ ul {
     /* padding-top: 1vh; */
     border-radius: 50%;
     box-shadow: 0px 0px 0px 1px wheat;
-    margin-top: 1em;
+    margin-top: .5em;
   }
 
   #menu-icon {
@@ -164,7 +166,7 @@ ul {
 
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 551px) {
 
   .chat-wrap {
     grid-template-columns: 1fr 1fr;
@@ -177,18 +179,111 @@ ul {
 
   .title {
     left: 44vw;
-    font-size: 1.5em;
+    transform: scale(2);
   }
 
   .sidenav-button {
     left: 47%;
   }
 
+  .chat-image {
+    transform: scale(2.5);
+    padding-top: .2em;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .chat-title {
+    font-size: 2.5em;
+  }
+
   ::ng-deep .mat-icon {
-    font-size: 2em !important;
+    font-size: 1em !important;
+  }
+
+  #menu-icon {
+    transform: scale(2.5);
+    padding-right: .1em;
+    box-sizing: content-box;
+  }
+
+  .input-container {
+    margin-top: 2.5em;
+    height: 2em;
+    width: 20%;
+    padding-left: 28%;
+    box-sizing: border-box;
+    transform: scale(2.5);
+  }
+
+  .icon {
+    transform: scale(2);
+    color: wheat;
+    /* padding-top: 1vh; */
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 1px wheat;
+    height: 1em;
   }
 
 }
 
 
+@media only screen and (min-width: 801px) {
 
+  .chat-wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 79.8vh 10vh;
+  }
+
+  .headers-container {
+    height: 10vh;
+  }
+
+  .title {
+    font-size: 1em;
+    transform: scale(3);
+  }
+
+  .sidenav-button {
+    left: 47%;
+  }
+
+  .chat-image {
+    transform: scale(3.5);
+    padding-top: .0em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  ::ng-deep .mat-icon {
+    font-size: 1em !important;
+    width: 1em !important;
+    height: 1em !important;
+  }
+
+  :ng-deep .mat-drawer-content {
+    overflow: hidden !important;
+  }
+
+  #menu-icon {
+    transform: scale(1.5);
+    padding-right: .1em;
+    box-sizing: content-box;
+  }
+
+  .icon {
+    transform: scale(1);
+  }
+
+  .input-container {
+    margin-top: 1em;
+    height: 1em;
+    width: 20%;
+    padding-left: 28.6%;
+    box-sizing: border-box;
+    transform: scale(2.5);
+  }
+
+}

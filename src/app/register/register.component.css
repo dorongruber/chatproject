@@ -7,10 +7,8 @@
   cursor: pointer;
 }
 
-::ng-deep  .mat-snack-bar-handset {
-  position: relative;
-  right: 18vw ;
-  top: 5vh ;
+::ng-deep .mat-form-field {
+  font-weight: bold !important;
 }
 
 .btn {
@@ -22,7 +20,7 @@
 
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 260px) {
   .footer {
     left: 30vw;
   }
@@ -32,7 +30,7 @@
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 551px) {
   .footer {
     left: 31vw;
   }
@@ -40,5 +38,17 @@
   .btn {
     font-size: 1.2em;
     padding: 0 4vw;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .footer {
+    left: 31vw;
+  }
+
+  .btn {
+    right: 13.5em;
+    font-size: 1em;
+    padding: 0 3vw;
   }
 }

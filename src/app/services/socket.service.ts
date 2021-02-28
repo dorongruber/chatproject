@@ -3,7 +3,7 @@ import * as io from 'socket.io-client';
 import { Observable } from 'rxjs';
 import { MsgDate } from '../models/message.model';
 
-const SOCKET_ENDPOINT_DEV = 'https://polar-bastion-67911.herokuapp.com';
+const SOCKET_ENDPOINT_DEV = 'http://localhost:8080/';
 
 
 

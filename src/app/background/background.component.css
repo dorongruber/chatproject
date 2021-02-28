@@ -6,6 +6,7 @@
   background-image:  url('../../assets/images/pngegg (18).png');
   background-size: 30% 30%;
   background-position: center;
+  background-color: darkslategray;
 }
 
 #login-body {
@@ -16,7 +17,8 @@
 }
 
 ::ng-deep .mat-form-field-infix {
-  width: 50vw !important;
+  width: 50vw ;
+  height: 1em ;
 }
 
 ::ng-deep .mat-form-field {
@@ -24,11 +26,16 @@
   font-weight: bold !important;
 }
 
+::ng-deep .mat-form-field-label {
+  color: rgba(0,0,0,1) !important;
+}
+
 .btn {
   cursor: pointer;
   text-align: center;
   font-size: 1.4em;
   background: rgba(218, 215, 205, .9);
+  height: 5vh;
 }
 
 .reg-btn {
@@ -41,7 +48,7 @@
   background: rgba(218, 215, 205, 1);
 }
 
-@media only screen and  (min-width: 300px) {
+@media only screen and  (min-width: 260px) {
   #login-body {
     margin: 8vh 6vw 3vh 6vw;
   }
@@ -55,12 +62,56 @@
   }
 }
 
-@media only screen and  (min-width: 500px) {
+@media only screen and  (min-width: 551px) {
+
+  .header {
+    padding: 3vh 0;
+    transform: scale(1.5);
+    text-align: center;
+    box-sizing: border-box;
+  }
+
   #login-body {
-    margin: 10vh 13vw 3vh 13vw;
+    margin: 10vh 9.5vw 3vh 9.5vw;
   }
 
   #form-body {
     margin: 5vh 10vw 8vh 10vw;
+    width: 23em;
+  }
+
+  .btn {
+    font-size: 2em;
+  }
+
+}
+
+@media only screen and  (min-width: 801px) {
+  #login-body {
+    margin: 10vh 34.5% 3vh 34.5%;
+  }
+
+  .header {
+    transform: scale(1);
+    padding: 0;
+    width: max-content;
+  }
+
+  #form-body {
+    margin: 5vh 1vw 8vh 1vw;
+    width: 18em;
+  }
+
+  ::ng-deep .mat-form-field {
+    height: 3em;
+  }
+
+  .mat-form-field-infix {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 1em;
+    line-height: 25px;
   }
 }
