@@ -50,6 +50,12 @@
   background: rgba(218, 215, 205, 1);
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+
+}
+
 @media only screen and  (min-width: 260px) {
   #login-body {
     margin: 8vh 6vw 3vh 6vw;
@@ -67,9 +73,8 @@
 @media only screen and  (min-width: 551px) {
 
   .header {
-    padding: 3vh 0;
+    padding: 1em 0;
     transform: scale(1.5);
-    text-align: center;
     box-sizing: border-box;
   }
 
@@ -90,8 +95,6 @@
 
   .header {
     transform: scale(1);
-    padding: 0;
-    width: max-content;
   }
 
   #form-body {

@@ -36,7 +36,7 @@ mat-label {
 
   .form-container {
     transform: scale(1);
-    padding: .2em 2em;
+    padding: .5em 0em;
     box-sizing: border-box;
   }
 
