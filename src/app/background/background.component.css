@@ -1,12 +1,13 @@
 #login-page {
   position: absolute;
-
   width: 100vw;
   height: 100vh;
   background-image:  url('../../assets/images/pngegg (18).png');
   background-size: 30% 30%;
   background-position: center;
   background-color: darkslategray;
+  display: flex;
+  justify-content: center;
 }
 
 #login-body {
@@ -19,6 +20,7 @@
 ::ng-deep .mat-form-field-infix {
   width: 50vw ;
   height: 1em ;
+  font-size: 11px !important;
 }
 
 ::ng-deep .mat-form-field {
@@ -58,7 +60,7 @@
   }
 
   #form-body {
-    margin: 2vh 10vw 8vh 10vw;
+    margin: 2vh 10vw;
   }
 }
 
@@ -71,9 +73,7 @@
     box-sizing: border-box;
   }
 
-  #login-body {
-    margin: 10vh 9.5vw 3vh 9.5vw;
-  }
+
 
   #form-body {
     margin: 5vh 10vw 8vh 10vw;
@@ -86,10 +86,7 @@
 
 }
 
-@media only screen and  (min-width: 801px) {
-  #login-body {
-    margin: 10vh 34.5% 3vh 34.5%;
-  }
+@media only screen and  (min-width: 850px) {
 
   .header {
     transform: scale(1);
@@ -98,7 +95,7 @@
   }
 
   #form-body {
-    margin: 5vh 1vw 8vh 1vw;
+    margin: 5vh 1vw;
     width: 18em;
   }
 

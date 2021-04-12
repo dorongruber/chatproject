@@ -1,5 +1,6 @@
 #form-footer {
-  position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
 mat-label {
@@ -11,9 +12,6 @@ mat-label {
 }
 
 @media only screen and (min-width: 260px) {
-  #form-footer {
-    left: 27vw;
-  }
 
   .btn {
     font-size: 1.2em;
@@ -26,10 +24,6 @@ mat-label {
   .form-container {
     transform: scale(1.2);
     padding: 1em;
-  }
-
-  #form-footer {
-    left: 22vw;
   }
 
   .btn {
@@ -46,13 +40,8 @@ mat-label {
     box-sizing: border-box;
   }
 
-  #form-footer {
-    left: 8vw;
-    bottom: -2em;
-  }
-
   .btn {
-    font-size: 1em;
-    padding: 0 4.6vw;
+    font-size: .8em;
+    padding: 0 2.6vw;
   }
 }

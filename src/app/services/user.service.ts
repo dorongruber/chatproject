@@ -6,8 +6,8 @@ import { map } from 'rxjs/operators';
 import { DbUserFormat } from '../models/userDB.model';
 import { environment } from 'src/environments/environment';
 
-const IPV4_URL = 'http://localhost:8080/api/user/';
-
+// const IPV4_URL = 'http://localhost:8080/api/user/';
+const IPV4_URL = 'https://polar-bastion-67911.herokuapp.com/api/user/';
 
 @Injectable({providedIn: 'root'})
 export class UserService {

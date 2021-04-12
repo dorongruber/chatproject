@@ -3,7 +3,8 @@ import * as io from 'socket.io-client';
 import { Observable } from 'rxjs';
 import { MsgDate } from '../models/message.model';
 
-const SOCKET_ENDPOINT_DEV = 'http://localhost:8080/';
+// const SOCKET_ENDPOINT = 'http://localhost:8080/';
+const SOCKET_ENDPOINT = 'https://polar-bastion-67911.herokuapp.com/';
 
 
 
@@ -12,7 +13,7 @@ export class SocketService {
   socket: any;
 
   constructor() {
-    this.socket = io(SOCKET_ENDPOINT_DEV);
+    this.socket = io(SOCKET_ENDPOINT);
     // this.subject = new Subject<{msg: string, uname: string, date: MsgDate}>();
   }
   // auto connection to users phool after loging to site

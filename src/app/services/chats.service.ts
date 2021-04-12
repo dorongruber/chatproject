@@ -74,12 +74,6 @@ export class ChatsService {
             this.currentChatMessages.next(this.allchats[index].messages[mindex]);
           }
         }
-        // this.divideMessagesToChats.push({
-        //   username: data.username,
-        //   message: data.message,
-        //   time: data.time
-        // });
-
     });
   }
 
