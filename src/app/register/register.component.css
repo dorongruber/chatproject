@@ -22,9 +22,6 @@
 }
 
 @media only screen and (min-width: 260px) {
-  .footer {
-    left: 30vw;
-  }
 
   .btn {
     font-size: 1.2em;
@@ -32,23 +29,15 @@
 }
 
 @media only screen and (min-width: 551px) {
-  .footer {
-    left: 31vw;
-  }
 
   .btn {
-    font-size: 1.2em;
     padding: 0 4vw;
   }
 }
 
-@media only screen and (min-width: 801px) {
-  .footer {
-    left: 31vw;
-  }
+@media only screen and (min-width: 850px) {
 
   .btn {
-    right: 13.5em;
     font-size: 1em;
     padding: 0 3vw;
   }

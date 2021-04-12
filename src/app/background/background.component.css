@@ -20,7 +20,7 @@
 ::ng-deep .mat-form-field-infix {
   width: 50vw ;
   height: 1em ;
-  font-size: 11px !important;
+  font-size: 14px !important;
 }
 
 ::ng-deep .mat-form-field {
